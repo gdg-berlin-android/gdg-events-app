@@ -33,12 +33,12 @@ Hacking
 
 If you want to extend this app, please feel free to do so. This project uses a default
 Android Studio layout, with the recommended layout for the
-[cardboard library][https://vr.google.com/cardboard/].
+[cardboard library](https://vr.google.com/cardboard/).
 
 
 Third Party
 ===========
 
-This app uses [Contentful][www.contentful.com] for managing it's content.
+This app uses [Contentful](http://www.contentful.com) for managing it's content.
 
 All rights are belonging to their individual owners.
