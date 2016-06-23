@@ -1,0 +1,40 @@
+Title
+=====
+
+GDG Events in DACH
+
+
+Short Description
+=================
+
+See past GDG Events through the eyes of a participant.
+
+
+Full Description
+================
+
+Using Photospheres and Cardboards, this App shows you what we as a Google Developer Groups (GDG)
+do at our events. Take virtually part of a past event, be informed about our latest events,
+and eventually be part of the fun your self.
+
+
+Graphic Assets
+==============
+
+
+
+
+
+![alt-text](./screenshot-about_screen.png "About Screen")
+![alt-text](./screenshot-current_events.png "Current Events")
+![alt-text](./screenshot-detail_of_event.png "Detail of Event")
+![alt-text](./screenshot-scrolled_spheres.png "Scrolled Photosphere of Event")
+![alt-text](./screenshot-photosphere_of_event.png "a Photosphere of event")
+![alt-text](./screenshot-photosphere_cardboard.png "another Photosphere of event as a cardboard view")
+
+
+![alt-text](./screencast-1.mp4 "Quick screencast of the app")
+
+
+![alt-text](./app/src/main/ic_launcher-web.png "Hi-Res Icon")
+

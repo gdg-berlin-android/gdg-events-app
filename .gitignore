@@ -1,0 +1,9 @@
+*.iml
+.gradle
+*.apk
+*.blend1
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures

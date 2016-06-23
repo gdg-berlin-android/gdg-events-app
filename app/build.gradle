@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "org.gdg.berlin.android.events"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':common')
+    compile project(':commonwidget')
+    compile project(':panowidget')
+    testCompile 'junit:junit:4.12'
+    apt 'com.contentful.vault:compiler:2.0.0'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:cardview-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.contentful.vault:core:2.0.0'
+    compile 'com.contentful.java:java-sdk:7.0.0'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'net.danlew:android.joda:2.9.3.1'
+}

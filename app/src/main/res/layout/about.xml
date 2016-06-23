@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/about_layout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@android:dimen/app_icon_size"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_border">
+
+        <ImageView
+            android:id="@+id/about_gdg_logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gdg_logo_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_border"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/content_description_app_logo"
+            />
+
+        <TextView
+            android:id="@+id/about_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_gdg_logo"
+            android:text="@string/about_text"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+
+        <View
+            android:id="@+id/about_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/about_text"
+            android:layout_marginBottom="@dimen/activity_border"
+            android:layout_marginTop="@dimen/activity_border"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/about_sponsored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_divider"
+            android:paddingBottom="@dimen/activity_border"
+            android:paddingTop="@dimen/activity_border"
+            android:text="@string/about_sponsored"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sponsor_logo_height"
+            android:layout_below="@id/about_sponsored"
+            android:layout_marginBottom="@dimen/activity_border"
+            android:src="@drawable/contentful_logo"
+            android:contentDescription="@string/content_description_contentful_logo"
+            />
+    </RelativeLayout>
+
+</ScrollView>

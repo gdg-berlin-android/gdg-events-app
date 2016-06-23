@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <dimen name="activity_border">16dp</dimen>
+    <dimen name="border">8dp</dimen>
+
+    <dimen name="panorama_preview_width">180dp</dimen>
+    <dimen name="panorama_preview_height">150dp</dimen>
+    <dimen name="panorama_preview_half_border">4dp</dimen>
+
+    <dimen name="event_item_image_size">100dp</dimen>
+
+    <dimen name="sponsor_logo_height">24dp</dimen>
+    <dimen name="gdg_logo_height">96dp</dimen>
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GDG Events</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_about">About</string>
+    <string name="about_text"><b>Welcome to GDG Events</b>\n\nThis app shows you the joy of being a member of a Google
+        Developer Group(GDG): Gathering in smaller or bigger groups, and doing anything interesting concerning
+        technology, not just coming from Google.\n\n
+        If you are ready to browse through some of the events, feel free to open the side navigation by clicking on the
+        hamburger menu. There you\'ll find all events documented so far in this app.\n\n
+        All events are including Photospheres, so you can immerse yourself into being a participant in one of those
+        events.
+    </string>
+    <string name="about_sponsored">
+        This app was developed together with <i>Contentful GmbH</i>. Proudly providing a content management system
+        without the bad parts…
+    </string>
+    <string name="about_title">About</string>
+
+    <string name="content_description_app_logo">Logo of the app</string>
+    <string name="content_description_group_logo">Logo of the current group, organizing this event</string>
+    <string name="content_description_contentful_logo">Logo of contentful</string>
+</resources>
