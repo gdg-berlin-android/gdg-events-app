@@ -14,15 +14,17 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.vrtoolkit.cardboard.widgets.common.VrWidgetView;
-import com.google.vrtoolkit.cardboard.widgets.pano.VrPanoramaEventListener;
-import com.google.vrtoolkit.cardboard.widgets.pano.VrPanoramaView;
+import com.google.vr.sdk.widgets.common.VrWidgetView;
+import com.google.vr.sdk.widgets.pano.VrPanoramaEventListener;
+import com.google.vr.sdk.widgets.pano.VrPanoramaView;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 
+import org.gdg.berlin.android.events.R;
+import org.gdg.berlin.android.events.ui.model.EventModel;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
@@ -31,8 +33,6 @@ import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import org.gdg.berlin.android.events.R;
-import org.gdg.berlin.android.events.ui.model.EventModel;
 
 @SuppressWarnings("WeakerAccess") // for bind views
 public class EventLayout extends CardView {
@@ -147,7 +147,7 @@ public class EventLayout extends CardView {
 
         final View fullscreenButton = sphere.findViewById(R.id.fullscreen_button);
         fullscreenButton.setBackgroundColor(0x80000000);
-        sphere.findViewById(R.id.cardboard_button).setBackgroundColor(0x80000000);
+        sphere.findViewById(R.id.vr_mode_button).setBackgroundColor(0x80000000);
 
         options.inputType = VrPanoramaView.Options.TYPE_MONO;
         sphere.loadImageFromBitmap(originalBitmap, options);
@@ -162,7 +162,7 @@ public class EventLayout extends CardView {
 
           @Override public void onDisplayModeChanged(int newDisplayMode) {
             if (newDisplayMode == VrWidgetView.DisplayMode.FULLSCREEN_MONO ||
-                newDisplayMode == VrWidgetView.DisplayMode.FULLSCREEN_VR) {
+                newDisplayMode == VrWidgetView.DisplayMode.FULLSCREEN_STEREO) {
               fullscreenSphereUrl = imageUri;
             } else {
               fullscreenSphereUrl = null;
@@ -230,8 +230,8 @@ public class EventLayout extends CardView {
     final FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(widthInPixel, heightInPixel);
     sphere.setLayoutParams(layoutParams);
 
-    sphere.setCardboardButtonEnabled(true);
     sphere.setInfoButtonEnabled(false);
+    sphere.setStereoModeButtonEnabled(true);
 
     return sphere;
   }
